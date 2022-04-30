@@ -101,24 +101,7 @@ const getshortcut = async function (req, res) {
 }
 
 
-// const deleteshortcut = async (req, res) => {
-//   try {
-//     const urlId = req.params.urlId;
 
-
-//     // if (!(isValid(urlId) && isValidObjectId(urlId))) {
-//     //     return res.status(404).send({ status: false, message: "urlId is not valid" })
-//     // }
-//     const deleteurl = await UrlModel.findOneAndUpdate({ _id: urlId, isDeleted: false }, { isDeleted: true, deletedAt: new Date() }, { new: true })
-//     if (deleteurl) {
-//       res.status(200).send({ status: true, msg: "This book has been succesfully deleted" })
-//       return
-//     }
-//     res.status(404).send({ status: false, message: `product alredy deleted not found` })
-//   } catch (error) {
-//     res.status(500).send({ status: false, message: error.message })
-//   }
-// }
 
 const deleteshortcut = async function (req, res) {
   try {
